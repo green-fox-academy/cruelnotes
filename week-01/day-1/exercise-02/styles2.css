@@ -1,0 +1,45 @@
+#divtop {
+    background: url("anakin.png") no-repeat top center;
+    height: 804px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#texttop {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 400px;
+    width: 40%;
+    vertical-align: bottom;
+    border: 1px solid red;
+    color: #222;
+    font-family: 'Abril Fatface', cursive;
+    
+}
+
+h1 {
+    font-size: 8em;
+     margin-top: 0.1em;
+     margin-bottom: 0.67em;
+}
+
+h2 {
+    font-size: 4em;
+     margin-top: 0.83em;
+     margin-bottom: 0.2em;
+}
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+blockquote {
+
+}
+
+font-family: 'Merriweather',
+serif;
