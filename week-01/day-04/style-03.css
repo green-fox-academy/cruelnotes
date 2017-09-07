@@ -1,3 +1,34 @@
 body {
 	color-profile: sRGB;
 }
+
+div {
+	width: 380px;
+	height: 290px;
+	border: 16px solid rgb(66, 133, 244);
+	margin-bottom: 6px;
+}
+
+p {
+	height: 128px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: Arial;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.north:first-child, .north:nth-child(2) {
+	background: rgb(230, 118, 118);
+}
+
+
+.south:nth-child(3), .south:last-child {
+	background: rgb(169, 230, 230);
+}
