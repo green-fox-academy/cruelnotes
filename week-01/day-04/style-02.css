@@ -1,0 +1,13 @@
+body {
+	color-profile: sRGB;
+}
+
+body > div {
+    background-color: rgb(66, 133,, 244);
+    padding: 16px;
+}
+
+span>div {
+    height: 128px;
+    width: 350px;
+}
