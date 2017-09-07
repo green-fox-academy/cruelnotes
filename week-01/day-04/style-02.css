@@ -1,13 +1,39 @@
 body {
-	color-profile: sRGB;
+  color-profile: sRGB;
 }
 
-body > div {
-    background-color: rgb(66, 133,, 244);
-    padding: 16px;
+div {
+  width: 380px;
+  border: 16px solid rgb(66, 133, 244);
 }
 
-span>div {
-    height: 128px;
-    width: 350px;
+p {
+  height: 128px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: Arial;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p:first-child {
+  background: rgb(230, 118, 118);
+}
+
+p:nth-child(2) {
+  background: rgb(242, 240, 98);
+}
+
+p:nth-child(3) {
+  background: rgb(169, 230, 230);
+}
+
+p:last-child {
+  background: rgb(118, 146, 228);
 }
