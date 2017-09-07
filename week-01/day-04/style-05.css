@@ -1,3 +1,30 @@
 body {
 	color-profile: sRGB;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+	color: rgb(255, 99, 71);
+	font-size: 16px;
+}
+
+h2 {
+	color: rgb(143, 43, 226);
+	font-size: 12px;
+}
+
+p, ol, ul {
+	font-size: 8px;
+	width: 250px;
+}
+
+ol {
+	list-style-type: upper-roman;
+	color: rgb(255, 25, 255);
+	text-decoration: underline;
+}
+
+ol li:last-child {
+	color: black;
+	text-decoration: underline;
 }
