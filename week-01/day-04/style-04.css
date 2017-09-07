@@ -2,6 +2,16 @@ body {
 	color-profile: sRGB;
 }
 
-p {
-	font-family: 'Lucida Sans Typewriter';
+h1 {
+	color: rgb(254, 164, 42);
 }
+
+p {
+	font-family: 'Inconsolata', monospace;
+	margin: 0;
+	padding: 0;
+}
+
+.indent {
+	text-indent: 1em;
+  }
