@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>title</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+
+	<!-- CONTAINER -->
+
+	<div id="container">
+		<div class="form title">Profil</div>
+
+
+		<div id="middle">				<!-- LEFT CONTAINER -->
+
+			<div class="form separator left">
+				<p>Személyes adatok</p>
+
+				<!-- NAME -->
+				<div id="minicube"> 
+				<div class="nev">
+					<label class="slinput" for="nev">Név * </label> <br>
+					<input id="nev" name="nev" class="" type="text" maxlength="255" value=""/> 
+				</div> 
+
+				<!-- BORN IN -->
+				<div class="born">
+				<label class="description" for="born">Születési éved </label>
+				<br>
+					<input id="born" name="born" class="element text medium" type="text" maxlength="255" value="pl. 1984"/> 
+				</div>
+
+					<!-- GENDER -->
+				<div class="gender">
+				<label class="description" for="gender">Nemed </label>
+				<br>
+					<input id="gender_1" name="gender" class="element radio" type="radio" value="1" />
+			<label class="choice" for="gender_1">nő</label>
+			<input id="gender_2" name="gender" class="element radio" type="radio" value="2" />
+			<label class="choice" for="gender_2">férfi</label>
+			</div>	
+		</div>
+
+			<!-- BRANDRADIO -->
+
+			<br>
+			<label class="description" for="brand">Milyen márkát szeretsz? </label>
+			<br>
+			
+			<span>
+				<input id="brand_1" name="brand_1" class="element checkbox" type="checkbox" value="1" />
+				<label class="choice" for="brand_1">Adidas</label>
+				<input id="brand_2" name="brand_2" class="element checkbox" type="checkbox" value="1" />
+				<label class="choice" for="brand_2">Opel</label>
+			</span>
+			<br>
+			<span>
+				<input id="brand_3" name="brand_3" class="element checkbox" type="checkbox" value="1" />
+				<label class="choice" for="brand_3">Apple</label>
+				<input id="brand_4" name="brand_4" class="element checkbox" type="checkbox" value="1" />
+				<label class="choice" for="brand_4">Ray-Ban</label>
+			</span>
+			<br>
+			
+			<span>
+			<input id="brand_5" name="brand_5" class="element checkbox" type="checkbox" value="1" />
+				<label class="choice" for="brand_5">Coca-Cola</label>
+				<input id="brand_6" name="brand_6" class="element checkbox" type="checkbox" value="1" />
+				<label class="choice" for="brand_6">Starbucks</label>
+			</span>
+			<br>
+			
+			<span>
+				<input id="brand_7" name="brand_7" class="element checkbox" type="checkbox" value="1" />
+				<label class="choice" for="brand_7">Mazda</label>
+				<input id="brand_8" name="brand_8" class="element checkbox" type="checkbox" value="1" />
+				<label class="choice" for="brand_8">Tesla</label>
+			</span>
+			<br>
+			
+			<span>
+				<input id="brand_9" name="brand_9" class="element checkbox" type="checkbox" value="1" />
+				<label class="choice" for="brand_9">Nike</label>
+				<input id="brand_10" name="brand_10" class="element checkbox" type="checkbox" value="1" />
+				<label class="choice" for="brand_10">Yahoo</label>
+			</span>
+			<br>
+			
+			<p class="guidelines" id="guide_10"><small>Többet is választhatsz'</small></p> 
+
+
+			</div>
+
+
+				<!-- RIGHT CONTAINER -->
+
+			<div class="form separator right">
+				<p>Kapcsolat</p>
+
+
+				<label class="description" for="tel">Telefonszám </label><br>
+				<input id="tel" name="tel" class="element text medium" type="text" maxlength="255" value="" />
+				<br>
+
+				<label class="description" for="email">Email-cím </label><br>
+				<input id="email" name="email" class="element text medium" type="text" maxlength="255" value="" />
+				<br>
+				
+				<label class="description" for="element_5">Facebook </label><br>
+				<input id="element_5" name="element_5" class="element text medium" type="text" maxlength="255" value="http://" />
+				<br>
+				
+				<label class="description" for="element_6">Twitter </label><br>
+				<input id="element_6" name="element_6" class="element text medium" type="text" maxlength="255" value="http://" />
+				<br>
+				
+				<label class="description" for="element_11">Milyen házban laksz </label><br>
+
+				<select class="element select medium" id="element_11" name="element_11"> 
+					<option value="" selected="selected"></option>
+					<option value="1" >First option</option>
+					<option value="2" >Second option</option>
+					<option value="3" >Third option</option>
+				</select>	
+				
+			</div>
+		</div>
+		<!-- BOTTOM CONTAINER -->
+
+		<div class="bottom">
+
+			<div>
+				<label class="description" for="element_7">Bemutatkozás </label>
+				<textarea id="element_7" name="element_7" class="element textarea medium"></textarea> 
+			</div>
+			
+			<div>
+				<label class="description" for="element_8">CV feltöltése </label>
+				<input id="element_8" name="element_8" class="element file" type="file"/> 
+				
+			</div>
+
+			<div>
+				<label class="description" for="element_12"> </label>
+
+				<input id="element_12_1" name="element_12_1" class="element checkbox" type="checkbox" value="1" />
+				<label class="choice" for="element_12_1">Elfogadom a felhasználási feltételeket</label>
+
+			</div>	
+		</div>
+
+	</div>
+
+</div>
+
+
+</body>
+
+</html>

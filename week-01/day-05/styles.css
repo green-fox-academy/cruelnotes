@@ -1,0 +1,71 @@
+#container {
+	width: 800px;
+	height: 1000px;
+	background-color: black;
+	border: 0;
+	margin: 0;
+	padding: 30px;
+	border: 1px solid greenyellow;
+	overflow: hidden;
+}
+
+.form {
+	background-color: #dcd6cd;
+
+}
+
+.title {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+
+}
+
+.separator p {
+	background-color: #938c97;
+	padding: 0;
+/* 	display: inline-box;
+	float: left; */
+	width: 40%;
+	border: 1px solid black;
+}
+
+.left, .right {
+	height: 300px;
+	display: border-box;
+	float: left;
+	margin: 0;
+	padding: 0; 
+	background-color: #dcd6cd;
+	width: 49%;
+	border: 1px solid black;
+	
+}	
+
+.right {
+	
+}
+
+.gender, .born {
+	display: block;
+	width: 48%;
+  float: left;
+}
+
+.bottom {
+	width: 100%;
+	display: block;
+	background-color: #dcd6cd;
+	padding: 0;
+	height: 330px;
+}
+
+.bottom div {
+	width: 100%;
+	display: block;
+	background-color: #dcd6cd;
+	padding: 0;
+	margin: 0;
+
+}
+
