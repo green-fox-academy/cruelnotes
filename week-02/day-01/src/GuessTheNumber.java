@@ -15,7 +15,7 @@ public class GuessTheNumber {
 
         Random rand = new Random();
         int randomNumberToGuess = rand.nextInt(100);
-        System.out.println(randomNumberToGuess);
+    //  System.out.println(randomNumberToGuess);
 
 
 

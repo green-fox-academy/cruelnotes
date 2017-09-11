@@ -20,15 +20,16 @@ public class DrawDiagonal {
 
         Scanner diagonalScanner = new Scanner(System.in);
         System.out.println("please provide the size of the diagonal");
-        int dimension = diagonalScanner.nextInt()-1;
+        int inDimension = diagonalScanner.nextInt()-1;
 
+        int dimension = inDimension;
         String modulo = "%";
         String bodyContainer = "";
         String empty = " ";
         String lineX = "";
 
         // Top vertical line
-        for (int i = 0; i < dimension + 2; i++) {
+        for (int i = 0; i < inDimension + 1; i++) {
             lineX = lineX + modulo;
             if (i == dimension) {
                 System.out.println(lineX);
@@ -36,7 +37,7 @@ public class DrawDiagonal {
         }
 
         //Body
-        for (int j = 0; j < dimension - 2; j++) {
+        for (int j = 0; j < dimension - 1; j++) {
             bodyContainer = "";
             for (int k = 0; k < dimension + 1; k++) {
 
@@ -55,12 +56,10 @@ public class DrawDiagonal {
 
         }
 
-        // Bottom vertical line
+        //Bottom vertical line
         System.out.println(lineX);
 
         }
-
-
 
 
     }
