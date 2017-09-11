@@ -39,7 +39,7 @@ public class GuessTheNumber {
             } else  {
                 System.out.println("You found the number: " + randomNumberToGuess);
                 break;
-                
+
             }
         }
     }
