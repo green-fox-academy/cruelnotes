@@ -1,6 +1,17 @@
+
+body {
+	padding-left: 20px;
+	margin-left: 5px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+* {
+	padding: 0;
+}
+
 #container {
 	width: 800px;
-	height: 1000px;
+	height: 1200px;
 	background-color: black;
 	border: 0;
 	margin: 0;
@@ -31,7 +42,8 @@
 }
 
 .left, .right {
-	height: 300px;
+	
+	height: 400px;
 	display: border-box;
 	float: left;
 	margin: 0;
@@ -57,7 +69,7 @@
 	display: block;
 	background-color: #dcd6cd;
 	padding: 0;
-	height: 330px;
+	height: 430px;
 }
 
 .bottom div {
@@ -72,5 +84,19 @@
 textarea {
 	width: 80%;
 	height: 100px;
+
+}
+
+.button	{
+	background-color: #dcd6cd;
+	display: inline-block;
+	float: left;
+	justify-content: center;
+}
+
+
+.checkbox, .brand {
+	
+	margin-bottom: 12px;
 
 }

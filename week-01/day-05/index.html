@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>title</title>
-
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 
 </head>
@@ -15,26 +15,24 @@
 
 	<div id="container">
 		<div class="form title">Profil</div>
+<div id="middle">
+	<!-- LEFT CONTAINER -->
 
+	<div class="form separator left">
+		<p>Személyes adatok</p>
 
-		<div id="middle">				<!-- LEFT CONTAINER -->
-
-			<div class="form separator left">
-				<p>Személyes adatok</p>
-
-				<!-- NAME -->
-				<div id="minicube"> 
-				<div class="nev">
-					<label class="slinput" for="nev">Név * </label> <br>
-					<input id="nev" name="nev" class="" type="text" maxlength="255" value=""/> 
-				</div> 
-
-				<!-- BORN IN -->
-				<div class="born">
+		<!-- NAME -->
+		<div id="minicube">
+			<div class="nev">
+				<label class="slinput" for="nev">Név * </label> <br>
+				<input id="nev" name="nev" class="" type="text" maxlength="255" value="" />
+			</div>
+			<!-- BORN IN -->
+			<div class="born">
 				<label class="description" for="born">Születési éved </label>
 				<br>
-					<input id="born" name="born" class="element text medium" type="text" maxlength="255" value="pl. 1984"/> 
-				</div>
+				<input id="born" name="born" class="element text medium" type="text" maxlength="255" value="pl. 1984" />
+			</div>
 
 					<!-- GENDER -->
 				<div class="gender">
@@ -48,9 +46,10 @@
 		</div>
 
 			<!-- BRANDRADIO -->
-
+		
 			<br>
-			<label class="description" for="brand">Milyen márkát szeretsz? </label>
+			<br><br><br>
+			<label class="brand" for="brand">Milyen márkát szeretsz? </label>
 			<br>
 			
 			<span>
@@ -59,6 +58,7 @@
 				<input id="brand_2" name="brand_2" class="element checkbox" type="checkbox" value="1" />
 				<label class="choice" for="brand_2">Opel</label>
 			</span>
+			dsadsa
 			<br>
 			<span>
 				<input id="brand_3" name="brand_3" class="element checkbox" type="checkbox" value="1" />
@@ -92,7 +92,7 @@
 			</span>
 			<br>
 			
-			<p class="guidelines" id="guide_10"><small>Többet is választhatsz'</small></p> 
+		<!-- 	<p class="guidelines" id="guide_10"><small>Többet is választhatsz'</small></p> -->
 
 
 			</div>
@@ -153,6 +153,12 @@
 				<label class="choice" for="element_12_1">Elfogadom a felhasználási feltételeket</label>
 
 			</div>	
+
+			<div class="button">
+
+			<button type="button">Mentés</button>
+			<button type="button">Úrlap törlése</button>
+		</div>
 		</div>
 
 	</div>
