@@ -13,6 +13,5 @@ public class DoubleItems {
             ag[i] *= 2;
 
         }
-
     }
 }
