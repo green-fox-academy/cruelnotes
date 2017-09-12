@@ -15,15 +15,14 @@ public class Sum {
         int sumUntil = userInput.nextInt();
 
         System.out.println(sum(sumUntil));
-
     }
 
     public static int sum(int top) {
         int container = 0;
             for (int i = 0; i <=  top; i++) {
                 container += i;
-
             }
         return container;
     }
+
 }

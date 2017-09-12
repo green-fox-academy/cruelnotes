@@ -1,8 +1,8 @@
 public class PrintElement {
 
-// - Create an array variable named `af`
-//   with the following content: `[4, 5, 6, 7]`
-// - Print all the elements of `af`
+    // - Create an array variable named `af`
+    //   with the following content: `[4, 5, 6, 7]`
+    // - Print all the elements of `af`
 
     public static void main(String[] args) {
 
@@ -11,7 +11,6 @@ public class PrintElement {
         for (int i = 0; i < af.length; i++) {
                 System.out.println(af[i]);
         }
-
     }
 
 }

@@ -11,7 +11,7 @@ public class DoubleItems {
 
         for (int i = 0; i < ag.length; i++) {
             ag[i] *= 2;
-
         }
     }
+
 }

@@ -8,6 +8,7 @@ public class Matrix {
     //   0 0 0 1
     //
     // - Print this two dimensional array to the output
+
     public static void main(String[] args) {
 
         int row = 4;
@@ -24,10 +25,7 @@ public class Matrix {
                 } else {
                     matrix[i][k] = 0;
                 }
-
             }
-
-
         }
 
         for (int i = 0; i <= row-1; i++) {
@@ -36,7 +34,5 @@ public class Matrix {
                 System.out.print(matrix[i][j] + " ");
             }
         }
-
     }
-
 }

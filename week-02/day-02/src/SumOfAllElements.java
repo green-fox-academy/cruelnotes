@@ -6,7 +6,7 @@ public class SumOfAllElements {
 
     public static void main(String[] args) {
 
-    int[] ai = {3, 4, 5, 6, 7};
+        int[] ai = {3, 4, 5, 6, 7};
 
         System.out.println(sumOfAll(ai));
 
@@ -20,4 +20,5 @@ public class SumOfAllElements {
             }
         return total;
     }
+
 }

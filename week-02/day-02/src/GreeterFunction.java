@@ -10,9 +10,10 @@ public class GreeterFunction {
 
             String al = "Greenfox";
             greet(al);
-    }
 
-    public static void greet(String input) {
-        System.out.println("Greetings, dear, " + input);
-    }
+        }
+
+        public static void greet(String input) {
+            System.out.println("Greetings, dear, " + input);
+        }
 }

@@ -12,7 +12,6 @@ public class AppendAArray {
         for (int i = 0; i < nimals.length; i++) {
             nimals[i] = nimals[i] + "a";
 
-
         }
     }
 }

@@ -11,11 +11,9 @@ public class AppendA {
 
         String am = "kuty";
         System.out.println(appendA(am));
-
     }
 
     public static String appendA(String appendable) {
         return appendable + "a";
     }
-
 }

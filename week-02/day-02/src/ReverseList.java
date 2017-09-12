@@ -3,7 +3,6 @@ public class ReverseList {
     public static void main(String[] args) {
 
         int[] aj = {3, 4, 5, 6, 7};
-
         int[] reverse = new int[aj.length];
 
 
@@ -12,11 +11,8 @@ public class ReverseList {
         }
 
         for (int j = 0; j < aj.length; j++) {
-
             System.out.println(reverse[j]);
-
         }
-
     }
 
 }
