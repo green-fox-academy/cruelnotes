@@ -12,9 +12,11 @@ public class CompareLength {
 
         if (p2.length > p1.length) {
             System.out.println("p2 has more element than p1");
-        } else {
+        } else if (p2.length > p1.length {
             System.out.println("p2 has less element than p1");
-
+        } else {
+            System.out.println("p2 equals p1");
         }
+
     }
 }

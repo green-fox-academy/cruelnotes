@@ -19,9 +19,10 @@ import java.util.Scanner;
 
         public static int factorio(int x) {
             int factorial = 1;
-                for (int i = 1; i <= x + 1; i++) {
-                    factorial *= i;
-                }
+
+            for (int i = 1; i <= x + 1; i++) {
+                factorial *= i;
+            }
             return factorial;
         }
 

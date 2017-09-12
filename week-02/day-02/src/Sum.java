@@ -18,11 +18,12 @@ public class Sum {
     }
 
     public static int sum(int top) {
-        int container = 0;
-            for (int i = 0; i <=  top; i++) {
-                container += i;
-            }
-        return container;
+        int total = 0;
+
+        for (int i = 0; i <=  top; i++) {
+            total += i;
+        }
+        return total;
     }
 
 }

@@ -22,9 +22,9 @@ public class Printer {
         printer(parameters);
     }
 
-    public static void printer(String ink[]) {
-        for (int i = 0; i < ink.length; i++ ) {
-            System.out.println(ink[i]);
+    public static void printer(String printInput[]) {
+        for (int i = 0; i < printInput.length; i++ ) {
+            System.out.println(printInput[i]);
         }
     }
 
