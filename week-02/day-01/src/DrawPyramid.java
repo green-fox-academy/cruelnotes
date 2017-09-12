@@ -15,17 +15,22 @@ public class DrawPyramid {
     public static void main(String[] args) {
 
         Scanner myScanner = new Scanner(System.in);
-        System.out.println("Please provide an input number: ");
-        int level = myScanner.nextInt();
-
-        String aster = "*";
-        String empty = " ";
-
-        String cont = "*;
+        System.out.println("Please provide the number of levels: ");
+        int rowNumber = myScanner.nextInt();
 
 
-        for (int i = 0; i < level; i++  ) {
-            System.out.println(cont);
+        for(int i = 1, k = 0; i <= rowNumber; ++i, k = 0) {
+            for(int empty = 1; empty <= rowNumber - i; ++empty) {
+                System.out.print(" ");
+            }
+
+            while(k != 2 * i - 1) {
+                System.out.print("*");
+                ++k;
+            }
+
+            System.out.println();
+
 
         }
 
