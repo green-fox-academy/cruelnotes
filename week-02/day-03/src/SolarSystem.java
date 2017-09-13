@@ -2,13 +2,12 @@ import java.util.*;
 
 public class SolarSystem{
 
-    // Saturn is missing from the planetList 
+    // Saturn is missing from the planetList
     // Insert it into the correct position
 
     public static void main(String[] args){
 
         ArrayList<String> planetList = new ArrayList<String>(Arrays.asList("Mercury","Venus","Earth","Mars","Jupiter","Uranus","Neptune"));
-
 
         planetList.add(5,"Saturn");
 
