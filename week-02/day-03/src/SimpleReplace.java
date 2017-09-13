@@ -23,10 +23,10 @@ public class SimpleReplace {
 
     public static void main(String args[]){
 
-    String Example = new String("In a dishwasher far far away");
+        String Example = new String("In a dishwasher far far away");
 
-    System.out.println(Example.replace("dishwasher", "galaxy"));
+        System.out.println(Example.replace("dishwasher", "galaxy"));
 
-    //  System.out.println(example);
+        //  System.out.println(example);
     }
 }
