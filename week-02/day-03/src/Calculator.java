@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Calculator {
 
-    public static String main(String... args) {
+    public static void main(String... args) {
         // Create a simple calculator application which reads the parameters from the prompt
         // and prints the result to the prompt.
         // It should support the following operations:
@@ -19,35 +19,39 @@ public class Calculator {
         // Print the result to the prompt
         // Exit
 
-
         Scanner myScanner = new Scanner(System.in);
         System.out.println("Please type in the expression:");
-        String operationOperand = myScanner.next();
+        String operationOperand = myScanner.nextLine();
 
-        System.out.println(calculator(operationOperand));
-    }
-
-    public static String calculator(String input) {
-
-        String[] calculatorArray = input.split(" ");
+        String[] calculatorArray = operationOperand.split(" ");
 
         String operation;
+
         operation = calculatorArray[0];
         int operandA = Integer.parseInt(calculatorArray[1]);
         int operandB = Integer.parseInt(calculatorArray[2]);
 
+
         switch (operation) {
 
             case "+":
-                return operandA + operandB;
+                System.out.println(operandA + operandB);
+                break;
             case "-":
-                return operandA - operandB;
+                System.out.println(operandA - operandB);
+                break;
             case "/":
-                return operandA / operandB;
+                System.out.println(operandA / operandB);
+                break;
             case "*":
-                return operandA * operandB;
+                System.out.println(operandA * operandB);
+                break;
+            case "%":
+                System.out.println(operandA % operandB);
+                break;
             default:
-                return operandA % operandB;
+                System.out.println("Invalid operator.");
         }
+
     }
 }
