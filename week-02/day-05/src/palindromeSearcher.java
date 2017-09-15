@@ -16,7 +16,7 @@ public class palindromeSearcher {
     System.out.println(searchPalindrome(inputStringLine));
     }
 
-    private static String searchPalindrome(String inputStringLine) {
+    private static String earchPalindrome(String inputStringLine) {
         ArrayList<String> palidromeArrayList = new ArrayList<String>();
 
         for (int i = 0; i < inputStringLine.length() - 3; i++) {
