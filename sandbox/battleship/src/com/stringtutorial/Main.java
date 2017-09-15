@@ -16,7 +16,7 @@ public class Main {
 
 
 
-    public static int randInt(int min, int max) {
+    static int randInt(int min, int max) {
         Random rand = new Random();
         int randomNum = rand.nextInt((max - min) + 1) + min;
         return randomNum;
@@ -28,8 +28,11 @@ public class Main {
         for (int i = 0; i < shipNr ; i++) {
             int rowNr = randInt(0,size);
             int colNr = randInt(0,size);
-            if (tableArray[rowNr][colNr] != "X") {
-                tableArray[rowNr][colNr] = "X";
+
+            tableArray[r1][r2]
+
+            if (tableArray[rowNr][colNr] == "") {
+                tableArray[rowNr][colNr] = "X ";
             } else {
                 i--;
             }
@@ -46,7 +49,7 @@ public class Main {
 
     }
 
-    public static void printTable(int size) {
+    static void printTable(int size) {
         for (int i = 0; i <= size; i++) {
             System.out.println();
             for (int j = 0; j <= 4 ; j++) {
