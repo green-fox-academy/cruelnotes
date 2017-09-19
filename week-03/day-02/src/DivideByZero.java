@@ -1,6 +1,7 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class WriteSingleLine {
+public class DivideByZero {
 // create a function that takes a number
 // divides ten with it,
 // and prints the result.
@@ -11,14 +12,17 @@ public class WriteSingleLine {
 
         Scanner intScanner = new Scanner(System.in);
         System.out.println("Please input an integer: ");
-        int userInput =   intScanner.nextInt(System.in);
+        int userInput = intScanner.nextInt();
 
-        System.out.println(divisionByTen(userInput));
-
-
-
+        tenDividedBy(userInput);
     }
 
-    private static int divisionByTen(int userInput) {
+    private static void tenDividedBy(int userInput) {
+        try {
+            System.out.println(10 / userInput);
+        } catch (ArithmeticException e) {
+            System.out.println("fail");
+        }
     }
+
 }

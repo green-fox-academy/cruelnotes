@@ -3,6 +3,7 @@ import java.nio.file.Paths;
 import java.nio.file.Files;
 
 public class WriteSingleLine {
+
   public static void main(String[] args) {
     // Open a file called "my-file.txt"
     // Write your name in it as a single line
