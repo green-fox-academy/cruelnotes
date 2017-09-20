@@ -9,7 +9,18 @@ public class Diagonals {
     public static void mainDraw(Graphics graphics){
       // draw the canvas' diagonals in green.
 
+        int a1 =10 ;
+        int a2 =10 ;
+        int b1 =110 ;
+        int b2 =10 ;
+        int c1 =110 ;
+        int c2 =110 ;
 
+        graphics.setColor(Color.GREEN);
+
+        graphics.drawLine(a1, a2, b1, b2);
+        graphics.drawLine(b1, b2, c1, c2);
+        graphics.drawLine(c1, c2, a1, a2);
 
     }
 
