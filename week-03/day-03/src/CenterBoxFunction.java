@@ -1,6 +1,7 @@
 import javax.swing.*;
 
 import java.awt.*;
+import java.util.Scanner;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
@@ -12,11 +13,19 @@ public class CenterBoxFunction {
       // and draws a square of that size to the center of the canvas.
       // draw 3 squares with that function.
 
-
-
+        for (int i = 0; i < 3 ; i++) {
+            Scanner drawScanner = new Scanner(System.in);
+            System.out.println("Size of square: ");
+            int squareSize = drawScanner.nextInt();
+            draCeteredSquare(graphics, squareSize);
+        }
     }
 
-//    Don't touch the code below
+    private static void draCeteredSquare(Graphics g, int size) {
+        g.drawRect((WIDTH / 2) - (size / 2 ), (HEIGHT / 2) - (size / 2), size, size);
+    }
+
+    //    Don't touch the code below
     static int WIDTH = 320;
     static int HEIGHT = 343;
 
