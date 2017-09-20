@@ -9,7 +9,33 @@ public class FourRectangles {
     public static void mainDraw(Graphics graphics){
       // draw four different size and color rectangles.
 
+        int centerX = WIDTH / 3 ;
+        int centerY = HEIGHT / 3;
+        int rectA2 = 20 / 2;
 
+        graphics.setColor(Color.GREEN);
+        graphics.drawRect(centerX - rectA2, centerY - rectA2, rectA2 * 2, rectA2 * 2);
+
+        centerX = WIDTH /5 ;
+        centerY = HEIGHT / 2;
+        rectA2 = 40 / 2;
+
+        graphics.setColor(Color.YELLOW);
+        graphics.drawRect(centerX - rectA2, centerY - rectA2, rectA2 * 2, rectA2 * 2);
+
+        centerX = WIDTH / 2 ;
+        centerY = HEIGHT / 6;
+        rectA2 = 70 / 2;
+
+        graphics.setColor(Color.BLUE);
+        graphics.drawRect(centerX - rectA2, centerY - rectA2, rectA2 * 2, rectA2 * 2);
+
+        centerX = WIDTH / 2 ;
+        centerY = HEIGHT / 2;
+        rectA2 = 100 / 2;
+
+        graphics.setColor(Color.RED);
+        graphics.drawRect(centerX - rectA2, centerY - rectA2, rectA2 * 2, rectA2 * 2);
 
     }
 

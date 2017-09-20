@@ -1,6 +1,7 @@
 import javax.swing.*;
 
 import java.awt.*;
+import java.util.Scanner;
 
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 
@@ -12,11 +13,22 @@ public class PositionSquare {
       // and draws a 50x50 square from that point.
       // draw 3 squares with that function.
 
-
-
+        for (int i = 0; i < 3 ; i++) {
+            Scanner drawScanner = new Scanner(System.in);
+            System.out.println("First coordinate: ");
+            int userX = drawScanner.nextInt();
+            System.out.println("Second coordinate: ");
+            int userY = drawScanner.nextInt();
+            userDrawSquare(graphics, userX, userY);
+        }
     }
 
-//    Don't touch the code below
+    private static void userDrawSquare(Graphics g, int xCoord, int yCoord) {
+
+        g.drawRect(xCoord, yCoord, 50, 50);
+    }
+
+    //    Don't touch the code below
     static int WIDTH = 320;
     static int HEIGHT = 343;
 
