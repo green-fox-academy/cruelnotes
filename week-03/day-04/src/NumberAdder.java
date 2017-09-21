@@ -3,16 +3,15 @@
 public class NumberAdder {
     public static void main(String[] args) {
 
-        addNumbers();
-
+        System.out.println(addNumbers(5));
     }
 
     private static int addNumbers(int n) {
-        int total += n;
-        if (n = 1) {
-            return total
+
+        if (n == 1) {
+            return 1;
         } else {
-            return n - 1;
+            return n + addNumbers(n -  1);
         }
     }
 }
