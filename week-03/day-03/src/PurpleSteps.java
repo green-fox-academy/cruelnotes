@@ -10,11 +10,23 @@ public class PurpleSteps {
       // reproduce this:
       // [https://github.com/greenfox-academy/teaching-materials/blob/master/workshop/drawing/purple-steps/r3.png]
 
-
-
+        drawSteps(graphics,25);
     }
 
-//    Don't touch the code below
+    private static void drawSteps(Graphics g, int size) {
+        int pos = 0;
+        int firstsize = 10;
+        for (int i = 0; i <= 20 ; i++) {
+
+            g.setColor(new Color(177, 69, 243));
+            g.fillRect(pos, pos, pos, pos);
+            pos += firstsize;
+            firstsize += size;
+            
+        }
+    }
+
+    //    Don't touch the code below
     static int WIDTH = 320;
     static int HEIGHT = 343;
 

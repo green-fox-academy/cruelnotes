@@ -9,13 +9,12 @@ public class Counter {
 
     }
 
-        public static int counterMethod(int n) {
-            for (int i = n - 1; i  > 0; i--) {
-                System.out.println(n);
-                n -= 1;
-            }
-            return n;
+    private static int counterMethod(int n) {
+        if (n <= 0) {
+            return 0;
+        } else {
+            System.out.println(n);
         }
-
-
+        return counterMethod(n-1);
+    }
 }
