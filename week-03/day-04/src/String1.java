@@ -8,7 +8,7 @@ public class String1 {
 
     private static String changeX(String s) {
         if (s.contains("x")) {
-            return changeX(s.replaceFirst("x", "y"));
+            return changeX(s.replaceFirst("x", " "));
         } else {
             return s;
         }
