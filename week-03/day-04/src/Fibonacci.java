@@ -4,3 +4,19 @@
 // previous two values, so the whole sequence is: 0, 1, 1, 2, 3, 5, 8, 13, 21
 // and so on. Define a recursive fibonacci(n) method that returns the nth
 // fibonacci number, with n=0 representing the start of the sequence.
+
+public class Fibonacci {
+    public static void main(String[] args) {
+        System.out.println(fibonacci(9));
+    }
+
+    private static int fibonacci(int n) {
+        if (n == 0) {
+            return n;
+        } else if (n == 1) {
+            return n;
+        } else {
+            return fibonacci(n-1) + fibonacci(n-2);
+        }
+    }
+}
