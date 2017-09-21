@@ -6,7 +6,7 @@ public class SumDigit {
 
     public static void main(String[] args) {
 
-        System.out.println(sumDigit(129, 0));
+        System.out.println(sumDigit(322, 0));
 
     }
 
