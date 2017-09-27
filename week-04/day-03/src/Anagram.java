@@ -1,28 +1,44 @@
     //Write a function, that takes two strings and returns a boolean value based on if the two strings are Anagramms or not.
     //Create a test for that.
 
-public class Anagram {
-    private String str1;
-    private String str2;
+    import java.util.ArrayList;
 
-    public Anagram(String str1, String str2) {
-        this.str1 = str1;
-        this.str2 = str2;
+    public class Anagram {
+    private String firstWord;
+    private String secondWord;
+
+    public Anagram(String firstWord, String secondWord) {
+        this.firstWord = firstWord;
+        this.secondWord = secondWord;
     }
 
-    public boolean isReverse(String str1, String str2) {
-        int i, len = str2.length();
-        StringBuilder rts2 = new StringBuilder(len);
+    public boolean isAnagram() {
 
-        for (i = (len - 1); i >= 0; i--) {
-            rts2.append(str2.charAt(i));
+        String[] firstArray = firstWord.split("");
+        String[] secondArray = secondWord.split("");
+
+        ArrayList<String> firstArrayList = new ArrayList<String>();
+        ArrayList<String> secondArrayList = new ArrayList<String>();
+
+        for (int i = 0, j = 0; i < firstArray.length ; i++, j++) {
+            firstArrayList.add(firstArray[i]);
+            secondArrayList.add(secondArray[j]);
         }
-        if (str1.equals(rts2)) {
+
+        for (int i = 0; i < firstArray.length; i++) {
+            for (int j = 0; j < secondArray.length; j++ ) {
+                if (firstArray[i].equals(secondArray[j])  ) {
+                    firstArrayList.remove(firstArray[i]);
+                    secondArrayList.remove(secondArray[j]);
+                }
+            }
+        }
+
+        if (firstArrayList.size() + secondArrayList.size() == 0) {
             return true;
-        } else {
+        }
+        else {
             return false;
         }
     }
-
-
 }
