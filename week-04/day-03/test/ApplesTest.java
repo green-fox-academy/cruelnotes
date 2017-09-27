@@ -1,5 +1,4 @@
 import org.junit.Test;
-
 import static org.junit.Assert.*;
 
 public class ApplesTest {
@@ -14,5 +13,4 @@ public class ApplesTest {
     public void testSoutApples() {
         assertEquals(msg, apples.getApple());
     }
-
 }
