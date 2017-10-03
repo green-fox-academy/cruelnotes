@@ -7,10 +7,12 @@ public class Board extends JComponent implements KeyListener {
 
     int testBoxX;
     int testBoxY;
+    String heroImgPos;
 
     public Board() {
-        testBoxX = 300;
-        testBoxY = 300;
+        testBoxX = 0;
+        testBoxY = 0;
+        heroImgPos = "./assets/hero-down.png";
 
         // set the size of your draw board
         setPreferredSize(new Dimension(720, 720));
@@ -20,10 +22,10 @@ public class Board extends JComponent implements KeyListener {
     @Override
     public void paint(Graphics graphics) {
         super.paint(graphics);
-        graphics.fillRect(testBoxX, testBoxY, 100, 100);
+       // graphics.fillRect(testBoxX, testBoxY, 72, 72);
         // here you have a 720x720 canvas
         // you can create and draw an image using the class below e.g.
-        PositionedImage image = new PositionedImage("yourimage.png", 300, 300);
+        PositionedImage image = new PositionedImage(heroImgPos, testBoxX, testBoxY);
         image.draw(graphics);
     }
 
@@ -59,13 +61,17 @@ public class Board extends JComponent implements KeyListener {
     public void keyReleased(KeyEvent e) {
         // When the up or down keys hit, we change the position of our box
         if (e.getKeyCode() == KeyEvent.VK_UP) {
-            testBoxY -= 100;
+            heroImgPos = "./assets/hero-up.png";
+            testBoxY -= 72;
         } else if(e.getKeyCode() == KeyEvent.VK_DOWN) {
-            testBoxY += 100;
+            heroImgPos = "./assets/hero-down.png";
+            testBoxY += 72;
         } else if(e.getKeyCode() == KeyEvent.VK_LEFT) {
-            testBoxX -= 100;
+            heroImgPos = "./assets/hero-left.png";
+            testBoxX -= 72;
         } else if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
-            testBoxX += 100;
+            heroImgPos = "./assets/hero-right.png";
+            testBoxX += 72;
         }
         // and redraw to have a new picture with the new coordinates
         repaint();
