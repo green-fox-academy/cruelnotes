@@ -1,3 +1,5 @@
+import javafx.scene.control.Cell;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -30,6 +32,7 @@ public class Board extends JComponent implements KeyListener {
 //    }
 
 
+
     @Override
     public void paint(Graphics graphics) {
         super.paint(graphics);
@@ -38,8 +41,24 @@ public class Board extends JComponent implements KeyListener {
         // you can create and draw an image using the class below e.g.
         ;
 
-        for (int floorPosX = 0; floorPosX < 721 ; floorPosX +=72) {
-            for (int floorPosY = 0; floorPosY < 721 ; floorPosY+=72) {
+
+        int row,col;
+        int[][] boardGame = new int[10][10];
+        for(row = 0; row < boardGame.length; row++) {
+            for (col = 0; col < boardGame[row].length; col++) {
+                boardGame[row][col] = 0;
+            }
+        }
+
+        for(row = 0; row < boardGame.length; row++){
+            System.out.println();
+            for(col = 0; col < boardGame[row].length; col++){
+                System.out.print(boardGame[row][col]);
+            }
+        }
+
+        for (int floorPosX = 0; floorPosX < 720 ; floorPosX +=72) {
+            for (int floorPosY = 0; floorPosY < 720 ; floorPosY+=72) {
                 PositionedImage floor = new PositionedImage("./assets/floor.png", floorPosX, floorPosY);
                 floor.draw(graphics);
             }
