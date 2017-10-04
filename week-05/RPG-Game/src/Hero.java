@@ -1,8 +1,7 @@
 import java.awt.*;
 
-public class Hero extends PositionedImage {
+public class Hero extends Character {
 
-    String left, right, up, down;
     int posX, posY;
 
     public Hero(String filename, int posX, int posY) {
@@ -13,5 +12,7 @@ public class Hero extends PositionedImage {
     public void draw(Graphics graphics) {
         graphics.drawImage(image, posX * 72, posY * 72, null);
     }
+
+
 
 }
