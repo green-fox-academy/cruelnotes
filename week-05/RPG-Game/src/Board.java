@@ -62,26 +62,26 @@ public class Board extends JComponent implements KeyListener {
 
     @Override
     public void keyReleased(KeyEvent e) {
-//        if (e.getKeyCode() == KeyEvent.VK_UP) {
-//            if (boardGame[heroPosY - 1][heroPosX] == 0) {
-//                heroPosY -= 1;
-//            }
-//        } else if(e.getKeyCode() == KeyEvent.VK_DOWN) {
-//            heroImg = "./assets/hero-down.png";
-//            if (boardGame[heroPosY + 1][heroPosX] == 0) {
-//                heroPosY += 1;
-//            }
-//        } else if(e.getKeyCode() == KeyEvent.VK_LEFT) {
-//            heroImg = "./assets/hero-left.png";
-//            if (boardGame[heroPosY][heroPosX - 1] == 0) {
-//                heroPosX -= 1;
-//            }
-//        } else if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
-//            heroImg = "./assets/hero-right.png";
-//            if (boardGame[heroPosY][heroPosX + 1] == 0) {
-//                heroPosX += 1;
-//            }
-//        }
+        if (e.getKeyCode() == KeyEvent.VK_UP) {
+            if (boardGame[heroPosY - 1][heroPosX] == 0) {
+                heroPosY -= 1;
+            }
+        } else if(e.getKeyCode() == KeyEvent.VK_DOWN) {
+            heroImg = "./assets/hero-down.png";
+            if (boardGame[heroPosY + 1][heroPosX] == 0) {
+                heroPosY += 1;
+            }
+        } else if(e.getKeyCode() == KeyEvent.VK_LEFT) {
+            heroImg = "./assets/hero-left.png";
+            if (boardGame[heroPosY][heroPosX - 1] == 0) {
+                heroPosX -= 1;
+            }
+        } else if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
+            heroImg = "./assets/hero-right.png";
+            if (boardGame[heroPosY][heroPosX + 1] == 0) {
+                heroPosX += 1;
+            }
+        }
         repaint();
     }
 }
