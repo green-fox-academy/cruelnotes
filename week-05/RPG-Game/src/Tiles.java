@@ -1,17 +1,7 @@
-public class Tiles {
+public class Tiles extends PositionedImage {
 
-//    PositionedImage imageName;
-//    String tileName;
-//
-//
-//    public Tiles(String tileName) {
-//        this.tileName = tileName;
-//
-//    }
-//
-//    public void drawTile() {
-//        imageName =
-//
-//    }
 
+    public Tiles(String filename, int posX, int posY) {
+        super(filename, posX, posY);
+    }
 }

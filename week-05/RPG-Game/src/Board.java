@@ -9,13 +9,13 @@ public class Board extends JComponent implements KeyListener {
 
     int testBoxX;
     int testBoxY;
-    String heroImgPos;
+    String heroImg;
  //   private int[][] boardGame;
 
     public Board() {
         testBoxX = 1;
         testBoxY = 1;
-        heroImgPos = "./assets/hero-down.png";
+        heroImg = "./assets/hero-down.png";
 
         // set the size of your draw board
         setPreferredSize(new Dimension(864, 1064));
@@ -48,26 +48,10 @@ public class Board extends JComponent implements KeyListener {
                 {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
         };
 
-//        int row,col;
-//        int[][] boardGame = new int[][]{
-//                {0, 0, 0, 1, 0, 1, 0, 0, 0, 0},
-//                {0, 0, 0, 1, 0, 1, 0, 1, 1, 0},
-//                {0, 1, 1, 1, 0, 1, 0, 1, 1, 0},
-//                {0, 0, 0, 0, 0, 1, 0, 0, 0, 0},
-//                {1, 1, 1, 1, 0, 1, 1, 1, 1, 0},
-//                {0, 1, 0, 1, 0, 0, 0, 0, 1, 0},
-//                {0, 1, 0, 1, 0, 1, 1, 0, 1, 0},
-//                {0, 0, 0, 0, 0, 1, 1, 0, 1, 0},
-//                {0, 1, 1, 1, 0, 0, 0, 0, 1, 0},
-//                {0, 0, 0, 1, 0, 1, 1, 0, 1, 0},
-//        };
+
     @Override
     public void paint(Graphics graphics) {
         super.paint(graphics);
-
-        // ---------------------- Board Array ------------------------//
-
-        //------------------------Filling Walls-----------------------//
 
 
         System.out.println();
@@ -88,33 +72,10 @@ public class Board extends JComponent implements KeyListener {
             }
         }
 
-        //------------------------Filling Floor-----------------------//
-
-//        for (int floorPosX = 0; floorPosX < 720 ; floorPosX +=72) {
-//            for (int floorPosY = 0; floorPosY < 720 ; floorPosY+=72) {
-//                PositionedImage floor = new PositionedImage("./assets/floor.png", floorPosX, floorPosY);
-//                floor.draw(graphics);
-//            }
-//        }
-
-//        for (int titleRow = 0; titleRow < 10 ; titleRow++) {
-//            for (int titleCol = 0; titleCol < 10 ; titleCol++) {
-//                if (boardGame[titleRow][titleCol] == 0) {
-//                PositionedImage floor = new PositionedImage("./assets/floor.png", titleRow, titleCol);
-//                floor.draw(graphics);
-//                } else if (boardGame[titleRow][titleCol] == 1) {
-//                PositionedImage wall = new PositionedImage("./assets/wall.png", titleRow, titleCol);
-//                wall.draw(graphics);
-//
-//                }
-//            }
-//        }
 
 
-
-
-        PositionedImage image = new PositionedImage(heroImgPos, testBoxX, testBoxY);
-        image.draw(graphics);
+        Hero karcsi = new Hero(heroImg, 1, 1);
+        karcsi.draw(graphics);
     }
 
     public static void main(String[] args) {
@@ -149,22 +110,22 @@ public class Board extends JComponent implements KeyListener {
     public void keyReleased(KeyEvent e) {
         // When the up or down keys hit, we change the position of our box
         if (e.getKeyCode() == KeyEvent.VK_UP) {
-            heroImgPos = "./assets/hero-up.png";
+            heroImg = "./assets/hero-up.png";
             if (boardGame[testBoxY - 1][testBoxX] == 0) {
                 testBoxY -= 1;
             }
         } else if(e.getKeyCode() == KeyEvent.VK_DOWN) {
-            heroImgPos = "./assets/hero-down.png";
+            heroImg = "./assets/hero-down.png";
             if (boardGame[testBoxY + 1][testBoxX] == 0) {
                 testBoxY += 1;
             }
         } else if(e.getKeyCode() == KeyEvent.VK_LEFT) {
-            heroImgPos = "./assets/hero-left.png";
+            heroImg = "./assets/hero-left.png";
             if (boardGame[testBoxY][testBoxX - 1] == 0) {
                 testBoxX -= 1;
             }
         } else if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
-            heroImgPos = "./assets/hero-right.png";
+            heroImg = "./assets/hero-right.png";
             if (boardGame[testBoxY][testBoxX + 1] == 0) {
                 testBoxX += 1;
             }

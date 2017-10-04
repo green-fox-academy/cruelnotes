@@ -9,11 +9,11 @@ public class Board extends JComponent implements KeyListener {
     int testBoxY;
 
     public Board() {
-        testBoxX = 300;
-        testBoxY = 300;
+        testBoxX = 1;
+        testBoxY = 1;
 
         // set the size of your draw board
-        setPreferredSize(new Dimension(720, 720));
+        setPreferredSize(new Dimension(864, 1064));
         setVisible(true);
     }
 
@@ -21,9 +21,11 @@ public class Board extends JComponent implements KeyListener {
     public void paint(Graphics graphics) {
         super.paint(graphics);
         graphics.fillRect(testBoxX, testBoxY, 100, 100);
-        // here you have a 720x720 canvas
-        // you can create and draw an image using the class below e.g.
         PositionedImage image = new PositionedImage("yourimage.png", 300, 300);
+        SetBoard boarD = new SetBoard();
+        boarD.printBoard();
+
+
         image.draw(graphics);
     }
 
