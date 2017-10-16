@@ -10,18 +10,8 @@ public class Board extends JComponent implements KeyListener {
     int heroPosX;
     int heroPosY;
     String heroImg;
-    int[][] boardGame = new int[][]{
-            { 0, 0, 0, 1, 0, 1, 0, 0, 0, 0},
-            { 0, 0, 0, 1, 0, 1, 0, 1, 1, 0},
-            { 0, 1, 1, 1, 0, 1, 0, 1, 1, 0},
-            { 0, 0, 0, 0, 0, 1, 0, 0, 0, 0},
-            { 1, 1, 1, 1, 0, 1, 1, 1, 1, 0},
-            { 0, 1, 0, 1, 0, 0, 0, 0, 1, 0},
-            { 0, 1, 0, 1, 0, 1, 1, 0, 1, 0},
-            { 0, 0, 0, 0, 0, 1, 1, 0, 1, 0},
-            { 0, 1, 1, 1, 0, 0, 0, 0, 1, 0},
-            { 0, 0, 0, 1, 0, 1, 1, 0, 1, 0},
-    };
+    Hero karcsi;
+
 
     public Board() {
         heroPosX = 1;
@@ -30,6 +20,8 @@ public class Board extends JComponent implements KeyListener {
         heroImg = "./assets/hero-down.png";
         setPreferredSize(new Dimension(864, 1064));
         setVisible(true);
+
+        karcsi = new Hero();
     }
 
     @Override
@@ -37,14 +29,8 @@ public class Board extends JComponent implements KeyListener {
         super.paint(graphics);
         System.out.println();
         String floor = "./assets/floor.png";
-        SetTable levelOne = new SetTable(floor,1,1, boardGame);
+        SetTable levelOne = new SetTable(floor,1,1);
         levelOne.printBoardArray(graphics);
-        Hero karcsi = null;
-        try {
-            karcsi = new Hero(heroImg, heroPosX, heroPosY);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
         karcsi.draw(graphics);
     }
 
@@ -73,7 +59,7 @@ public class Board extends JComponent implements KeyListener {
         } else if(e.getKeyCode() == KeyEvent.VK_DOWN) {
 
         } else if(e.getKeyCode() == KeyEvent.VK_LEFT) {
-
+            karcsi.move("./assets/hero-left.png",0,0);
         } else if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
 
         }

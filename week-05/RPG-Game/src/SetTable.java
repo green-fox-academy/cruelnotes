@@ -2,12 +2,22 @@ import java.awt.*;
 
 public class SetTable extends PositionedImage {
 
-    int[][] boardGame;
+    int[][] boardGame = new int[][]{
+            { 0, 0, 0, 1, 0, 1, 0, 0, 0, 0},
+            { 0, 0, 0, 1, 0, 1, 0, 1, 1, 0},
+            { 0, 1, 1, 1, 0, 1, 0, 1, 1, 0},
+            { 0, 0, 0, 0, 0, 1, 0, 0, 0, 0},
+            { 1, 1, 1, 1, 0, 1, 1, 1, 1, 0},
+            { 0, 1, 0, 1, 0, 0, 0, 0, 1, 0},
+            { 0, 1, 0, 1, 0, 1, 1, 0, 1, 0},
+            { 0, 0, 0, 0, 0, 1, 1, 0, 1, 0},
+            { 0, 1, 1, 1, 0, 0, 0, 0, 1, 0},
+            { 0, 0, 0, 1, 0, 1, 1, 0, 1, 0},
+    };
 
 
-    public SetTable(String filename, int posX, int posY, int[][] boardGame) {
+    public SetTable(String filename, int posX, int posY) {
         super(filename, posX, posY);
-        this.boardGame = boardGame;
     }
 
     public void printBoardArray(Graphics graphics) {
@@ -19,7 +29,7 @@ public class SetTable extends PositionedImage {
                     PositionedImage floor = new PositionedImage("./assets/floor.png", col, row);
                     floor.draw(graphics);
                 } else if (boardGame[row][col] == 1) {
-                    PositionedImage wall = new PositionedImage("./assets/wall.png", col, row);
+                    Wall wall = new Wall(col, row);
                     wall.draw(graphics);
                 }
             }
