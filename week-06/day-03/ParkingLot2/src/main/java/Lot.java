@@ -15,6 +15,7 @@ public class Lot {
         }
 
         for(String item : carList){
+            if (item.contains())
             System.out.println(item);
         }
 

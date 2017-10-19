@@ -12,5 +12,4 @@ public class RandomEnum<E extends Enum> {
     public E randomValue() {
         return values[RND.nextInt(values.length)];
     }
-
 }
