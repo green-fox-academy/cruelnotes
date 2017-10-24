@@ -19,7 +19,6 @@ public class HelloController {
 //    public String greeting() {
 //        Greeting rev = new Greeting(new AtomicLong(1), "Hello");
 //        return ("id:" + rev.getId() + "content:" + rev.getContent());
-//
 //    }
 
 }
