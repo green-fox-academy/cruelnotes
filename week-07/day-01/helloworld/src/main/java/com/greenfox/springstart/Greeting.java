@@ -1,6 +1,6 @@
 package com.greenfox.springstart;
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import java.util.concurrent.atomic.AtomicLong;
 
 public class Greeting {
 

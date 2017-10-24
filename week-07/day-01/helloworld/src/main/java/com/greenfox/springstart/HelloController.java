@@ -3,7 +3,8 @@ package com.greenfox.springstart;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+
+import java.util.concurrent.atomic.AtomicLong;
 
 @Controller
 public class HelloController {
@@ -13,12 +14,12 @@ public class HelloController {
     public String hello() {
         return "hello world";
     }
-    @RequestMapping("/greeting")
-    @ResponseBody
-    public String greeting() {
-        Greeting rev = new Greeting(1, "Hello");
-        return ("id:" + rev.getId() + "content:" + rev.getContent());
-
-    }
+//    @RequestMapping("/greeting")
+//    @ResponseBody
+//    public String greeting() {
+//        Greeting rev = new Greeting(new AtomicLong(1), "Hello");
+//        return ("id:" + rev.getId() + "content:" + rev.getContent());
+//
+//    }
 
 }
