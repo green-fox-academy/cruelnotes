@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>HTMLception</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<table>
+    <tr>
+        <th>INDEX</th>
+        <th>NAME</th>
+        <th>BALANCE</th>
+        <th>TYPE</th>
+        <th>KING</th>
+        <th>Evil</th>
+
+    </tr>
+    <tr th:each="acc : ${bank}">
+        <td th:text="${accStat.index+1}">Index</td>
+        <td th:text="${acc.name}"></td>
+        <td th:text="${#numbers.formatDecimal(acc.balance, 0, 2)}"></td>
+        <td th:text="${acc.animalType}"></td>
+        <td th:style="${acc.isKing} ? 'background-color:palegoldenrod' : 'background-color:whitesmoke' " ></td>
+        <td th:text="${acc.isBad} ? 'Badguy' : 'Nah'"></td>
+    </tr>
+</table>
+</body>
+</html>
