@@ -1,0 +1,10 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>BankOfSimba</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<p th:object="${acc}" th:text="'Account: ' + *{name} + ', Balance: ' + *{#numbers.formatDecimal(balance, 0, 2)} + ' Type: ' + *{animalType}" />
+</body>
+</html>
