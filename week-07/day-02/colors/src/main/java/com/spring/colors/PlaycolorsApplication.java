@@ -11,5 +11,9 @@ public class PlaycolorsApplication {
         ApplicationContext appContext = new AnnotationConfigApplicationContext(RedColor.class);
         RedColor purpleColor = appContext.getBean(RedColor.class);
         purpleColor.printColor();
+
+        ApplicationContext appContext = new AnnotationConfigApplicationContext(RedColor.class);
+        RedColor purpleColor = appContext.getBean(RedColor.class);
+        purpleColor.printColor();
     }
 }
