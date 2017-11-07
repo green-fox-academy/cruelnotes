@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Adam Reddit</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+
+<a th:href="@{/posts/add}" id="add"> Add new Post</a>
+<h1>Posts</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>Score</th>
+        <th>Actions</th>
+        <th>Content</th>
+    </tr>
+    </thead>
+    <tr th:each="post:${posts}">
+        <td th:text="${post.score}"></td>
+        <td><a th:href="@{'posts/{id}/up'(id=${post.id})}" ></a>
+            <a th:href="@{'posts/{id}/down'(id=${post.id})}"></a></td>
+        <td th:text="${post.title}"></td>
+    </tr>
+</table>
+<div class="link">
+</div>
+</body>
+</html>
