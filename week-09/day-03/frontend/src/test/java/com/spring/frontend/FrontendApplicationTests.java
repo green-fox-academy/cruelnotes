@@ -61,4 +61,12 @@ public class FrontendApplicationTests {
 				.andExpect(jsonPath("$.welcomeing", is("Oh, hi there Adam, my dear sukipls!")));
 	}
 
+	@Test
+	public void appendaSuccessTest() throws Exception {
+		mockMvc.perform(get("/appenda/kuty"))
+				.andExpect(status().isOk())
+				.andExpect(content().contentType(contentType))
+				.andExpect(jsonPath("$.append", is("kutya")));
+	}
+
 }
