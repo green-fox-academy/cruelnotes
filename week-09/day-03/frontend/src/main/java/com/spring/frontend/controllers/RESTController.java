@@ -10,16 +10,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class RESTController {
 
     @GetMapping(value="/doubling")
-    public Double aDouble(@RequestParam ("input") Integer input){
-        if ( input == Null ) {
-
+    public Object aDouble(@RequestParam ("input") Integer input){
+        if (input == null) {
+            ErrorMessage msg = new ErrorMessage("Please provide an input!");
+            return msg;
         } else {
-
-        }
-
-
             Double d = new Double(input);
             return d;
+        }
     }
 
     @GetMapping(value = "/greeter")
