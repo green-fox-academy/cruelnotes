@@ -11,6 +11,13 @@ public class RESTController {
 
     @GetMapping(value="/doubling")
     public Double aDouble(@RequestParam ("input") Integer input){
+        if ( input == Null ) {
+
+        } else {
+
+        }
+
+
             Double d = new Double(input);
             return d;
     }
