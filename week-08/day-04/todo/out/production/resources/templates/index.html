@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Guest Book</title>
+</head>
+<body>
+<h1>List of Todos</h1>
+<h2>Count: <span th:text="${size}"></span></h2>
+<form action="/todo/addedEntry" method="post">
+    <input name="userName"/>
+    <input name="task"/>
+    <button type="submit" value="Submit">Submit</button>
+</form>
+<table>
+    <tbody>
+    <tr>
+        <th>Username</th>
+        <th>ToDos</th>
+    </tr>
+    <tr th:each="entry : ${entries}">
+        <td th:text="${entry.username}"></td>
+        <td th:text="${entry.task}"></td>
+        <td><a th:href="@{/todo/edit/{id}(id=${entry.id})}">Edit</a></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
