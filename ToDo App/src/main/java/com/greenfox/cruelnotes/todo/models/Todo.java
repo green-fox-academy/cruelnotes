@@ -29,28 +29,28 @@ public class Todo {
         this.urgent = urgent;
     }
 
+    public void setUrgent(boolean urgent) {
+        this.urgent = urgent;
+    }
+
     public boolean getUrgent() {
         return urgent;
+    }
+
+    public void setDone(boolean done) {
+        this.done = done;
     }
 
     public boolean getDone() {
         return done;
     }
 
-    public long getId() {
-        return id;
-    }
-
     public String getContent() {
         return content;
     }
 
-    public void setUrgent(boolean urgent) {
-        this.urgent = urgent;
-    }
-
-    public void setDone(boolean done) {
-        this.done = done;
+    public long getId() {
+        return id;
     }
 
     public void setId(long id) {
