@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Create New Todo</title>
+    <link rel="stylesheet" href="/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+    <h1>Add new todo</h1>
+    <form th:action="@{/todo/add}" th:object="${todo}" method="post">
+        <p>Todo:<input type="text" th:field="*{content}"/></p>
+        <p>Is it done?<input type="checkbox" th:field="*{done}"/></p>
+        <p>Is it urgent?<input type="checkbox" th:field="*{urgent}"/></p>
+        <p><input type="submit" value="Submit" /></p>
+    </form>
+</body>
+</html>
+
+<!--<title>Add New Assignee</title>-->
+
+<!--<h1>Add new assignee</h1>-->
+<!--<form th:action="@{/todo/assignee/add}" th:object="${assignee}" method="post">-->
+    <!--<p>Name: <input type="text" th:field="*{name}"/></p>-->
+    <!--<p>Email: <input type="text" th:field="*{email}"/></p>-->
+    <!--<p><input type="submit" value="Submit" /></p>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->

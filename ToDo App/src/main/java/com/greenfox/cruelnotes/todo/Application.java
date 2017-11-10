@@ -23,6 +23,5 @@ public class Application implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		todoRepo.save(new Todo("I need to do this.", true, false));
 	}
 }

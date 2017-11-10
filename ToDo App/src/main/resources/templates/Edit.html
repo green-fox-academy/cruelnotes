@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title  th:text="${pageTitle}">Edit Todo</title>
+    <link rel="stylesheet" href="/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+    <h1>Edit Todo</h1>
+    <form th:action="@{/todo/{id}/edit}" th:object="${editTodo}" method="post">
+        <input type="hidden" th:field="*{id}"/>
+        <p>Todo description: <input type="text" th:field="*{content}"/></p>
+        <p>Done <input type="checkbox" th:field="*{done}"/></p>
+        <p>Urgent <input type="checkbox" th:field="*{urgent}"/></p>
+        <p><input type="submit" value="Submit" /></p>
+    </form>
+</body>
+</html>
+
+<!--<head>-->
+    <!--<meta charset="UTF-8" />-->
+    <!--<title>Edit Assignee's Details</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>Edit Assignee</h1>-->
+<!--<form th:action="@{/todo/assignee/{id}/edit}" th:object="${editAssignee}" method="post">-->
+    <!--<input type="hidden" th:field="*{id}"/>-->
+    <!--<p>Name: <input type="text" th:field="*{name}"/></p>-->
+    <!--<p>Email: <input type="text" th:field="*{email}"/></p>-->
+    <!--<p><input type="submit" value="Submit" /></p>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->

@@ -1,6 +1,5 @@
 package com.greenfox.cruelnotes.todo.controllers;
 
-
 import com.greenfox.cruelnotes.todo.models.Todo;
 import com.greenfox.cruelnotes.todo.repositories.TodoRepo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,9 +26,10 @@ public class TodoController {
                     todoList.add(todo);
                 }
             } else {
-                todoList.add(todo);         //if there's no request param, add all the todos
+                todoList.add(todo);
             }
         }
+
         model.addAttribute("todos", todoList);
         return "todo";
     }
@@ -50,6 +50,13 @@ public class TodoController {
     public String delete(@PathVariable long id) {
         todoRepo.delete(id);
         return "redirect:/todo";
+    }
+
+
+    @RequestMapping("/")
+    public String edit(Model model) {
+        model.addAttribute("pageTitle", "Edit this todo");
+        return "edit";
     }
 
     @GetMapping(value = "/{id}/edit")

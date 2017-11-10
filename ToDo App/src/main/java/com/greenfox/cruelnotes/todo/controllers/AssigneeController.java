@@ -23,7 +23,7 @@ public class AssigneeController {
     @RequestMapping(value="/add")
     public String addAssignee(Model model) {
         model.addAttribute("assignee", new Assignee());
-        return "createAssignee";
+        return "create";
     }
 
     @PostMapping(value="/add")
@@ -41,7 +41,7 @@ public class AssigneeController {
     @GetMapping(value="/{id}/edit")
     public String editAssignee(@PathVariable long id, Model model) {
         model.addAttribute("editAssignee", assigneeRepo.findOne(id));
-        return "editAssignee";
+        return "edit";
     }
 
     @PostMapping(value="/{id}/edit")
