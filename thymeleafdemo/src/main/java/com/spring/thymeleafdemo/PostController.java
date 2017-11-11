@@ -26,17 +26,3 @@ public class PostController {
         return body;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-//pageTitle
-//post.body
