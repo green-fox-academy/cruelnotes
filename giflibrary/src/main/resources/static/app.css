@@ -9,8 +9,9 @@ nav {
     box-shadow: none;
 }
 
+
 nav .brand-logo, nav ul li.active a {
-    color: #fefefe;
+    color: rgb(242,228,14);
 }
 
 nav ul li a {
@@ -18,7 +19,7 @@ nav ul li a {
 }
 
 nav ul li a, nav .brand-logo span {
-    color: #d6c5ec;
+    color: rgb(242,228,14);
 }
 
 nav ul li.active, nav ul li:hover {
@@ -51,7 +52,7 @@ nav ul li.active, nav ul li:hover {
 }
 
 .search-bar .input-field {
-    border: 1px solid #dad7de;
+    border: 1px solid rgb(242,228,14);
     border-radius: 4px;
 }
 
@@ -160,7 +161,7 @@ nav ul li.active, nav ul li:hover {
 }
 
 .share {
-    border: 1px solid #e3e1e6;
+    border: 1px solid rgb(242,228,14);
     border-radius: 4px;
     padding: 0.5rem 0.5rem 0.5rem 1rem;
     margin-top: 8px;
@@ -170,7 +171,7 @@ nav ul li.active, nav ul li:hover {
     background-color: rgb(62,66,74);
     box-shadow: none;
     text-transform: none;
-    color: #fefefe;
+    color: rgb(242,228,14);
 }
 
 .share span {
@@ -192,7 +193,7 @@ nav ul li.active, nav ul li:hover {
 }
 
 .card .card-title a {
-    color:#fff;
+    color:rgb(242,228,14);
     display:block;
     padding: 20px;
 }
