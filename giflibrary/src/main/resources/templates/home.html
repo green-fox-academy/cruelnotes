@@ -45,23 +45,10 @@
     </div>
     <div class="gifs container">
         <div class="row">
-            <div class="col s12 l4">
-                <a>
-                    <img th:src="@{/gifs/error.gif}" alt="https://media.giphy.com/media/26u4k2NplqgGLDJ3q/giphy.gif" />
-                    <a href="#" class="mark favorite"></a>
-                </a>
-            </div>
-            <div class="col s12 l4">
-                <a>
-                    <img th:src="@{/gifs/bplease.gif}" alt="https://media.giphy.com/media/3o7aCW3rlvNJKn4pCo/giphy.gifcd ..
-" />
-                    <a href="#" class="mark favorite"></a>
-                </a>
-            </div>
-            <div class="col s12 l4">
-                <a>
-                    <img th:src="@{/gifs/proveitorgtfo.gif}" alt="https://media.giphy.com/media/26u4dRHovqjPvRVio/giphy.gif" />
-                    <a href="#" class="mark favorite"></a>
+            <div th:each="gif : ${gifs}" class="col s12 l4">
+                <a th:href="@{'/gif/' + ${gif.name} + '.gif'}">
+                    <img th:src="@{'/gifs/' + ${gif.name} + '.gif'}" alt="https://media.giphy.com/media/26u4k2NplqgGLDJ3q/giphy.gif" />
+                    <a href="#" th:class="(${gif.favourite} ? 'un' : '') + 'mark favorite'"></a>
                 </a>
             </div>
         </div>
