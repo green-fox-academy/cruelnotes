@@ -27,5 +27,4 @@ public class GifRepository {
         return ALL_GIFS;
 
     }
-
 }
